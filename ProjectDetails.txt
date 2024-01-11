@@ -1,0 +1,52 @@
+Flutter E-Commerce Porject:
+
+Folder Part:
+1. Lets Do Project Folder Structure.
+2. Lets add some pre define file with code like app colors font size images.
+
+Project Part:
+
+// Splash Screen
+
+1. Lets add splash screen in the project. For that lets create a yaml file in our main project folder. lets name it splash.yaml and have thos code on it:
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#272727"
+  image: assets/logos/t-store-splash-logo-black.png
+  image_dark: assets/logos/t-store-splash-logo-white.png
+
+  android_12:
+    color: "#FFFFFF"
+    color_dark: "#272727"
+    image: assets/logos/t-store-splash-logo-black.png
+    image_dark: assets/logos/t-store-splash-logo-white.png
+
+  web: false
+
+2. Lets add a dependency called flutter_native_splash: ^2.3.9 on pubspec.yaml
+3. Lets run this code from our terminal so that we can see the splash screen:
+        flutter pub run flutter_native_splash:create --path=splash.yaml
+
+
+// End Splash Screen
+
+// Screen Onboarding
+
+1. In app.dart inside scaffold as a home option lets have a onBoardingScreen().
+2. Lets create onBoardingScreen stateless widget in lib>authentication>screen>onboarding>onboarding.dart
+3. For using 2,3 image + content on scroll 1image + content lets have a package:
+    smooth_page_indicator: ^1.1.0
+
+4. For swiping screen lets use PageView widget and inside this lets have a OnBoardPage self made widget and inside this lets have our every screen image and content.
+5. For skip this onboard screen lets have a widget after Pageview widget > OnBoardingSkip().
+6. With the help of dot effect and next button we can swipe our onboard screen as well...for that lets use onBoardingDotNavigation() and OnBoardingNextButton() self made widget.
+7. In those widget lets have stateless widget and put our styles there of all dot or next button.
+
+8. For controlling all this widgets work lets have a controller inside features > authentication > controllers > onboarding > onboarding_controlelr.dart
+
+9. Here we can make functions for controlling the work of every dot and next button and we can add those function on onPressed option of every widget.
+
+
+
+// End Screen Onboarding
+
