@@ -50,3 +50,32 @@ flutter_native_splash:
 
 // End Screen Onboarding
 
+
+// Login Page
+
+1. Lets create Login stateless widget in lib>authentication>screen>login>login.
+    dart
+2. Inside login page lets have icon title subtitle email and password login input field remember me forget password option sign in and create account button... or sign in with google facebook option.
+
+3.  Previous onScreen part at number 9 in this controller there is a 
+    nextPage function for next button in this function inside if lets have:
+    Get.offAll(const LoginScreen()); Its means if there is LoginScreen option then close all other pages and redirect to LoginScreen.
+
+// End Login Page
+
+// Register Page
+1. Lets create Register stateless widget in lib>authentication>screen>signup>widgets > signup.dart
+
+2. Inside signup page lets have icon title subtitle email and password user name first name last name signup input field Terms and condition and create account button... or sign up with google facebook option.
+
+3.  Previous login part at number 2 we created a button create account on
+    this button onPressed lets pass our registerScreen widgets to output this   screen:
+            onPressed: () => Get.to(() => const SignUpScreen())
+
+// End Register Page
+
+// Verify Email & Success Screen UI
+
+
+
+// End Verify Email & Success Screen UI

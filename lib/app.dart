@@ -6,6 +6,7 @@ import 'package:t_store/utils/theme/theme.dart';
 void main() {
   runApp(const App());
 }
+
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
 
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       themeMode: ThemeMode.system,
-      theme:TAppTheme.lightTheme,
+      theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       home: const OnBoardingScreen(),
     );
