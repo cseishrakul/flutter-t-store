@@ -76,6 +76,31 @@ flutter_native_splash:
 
 // Verify Email & Success Screen UI
 
-
+1. If registration done and user press create account then he should redirect to verify_email screen.
+2. Lets design this page.
+3. In part 2 we ll have a continue button and it will redirect to Success Screen.
+4. Lets design Success screen.
+5. In part 4 there should be a continue button and if user click on it he should redirect to login screen for login to the app.
 
 // End Verify Email & Success Screen UI
+
+// Forget Password && Reset Password Screen
+
+1. Lets create forget_password and reset_password screen inside lib>features>authentication>screens>password_configuration>
+
+2. In forget_password page lets have a email input option and a submit button.And from submit button lets redirect to reset_password page.For redirect lets use Get.off instant of Get.to so that user cannot come back to this page by selecting back option.
+
+3. In reset_password page lets have text like reset password sent to email you submited in last option. And lets have two button done and resend email.
+
+// Bottom Navigation bar
+
+1. Lets create page in lib > navigation_menu
+
+2. Lets create navigation bar and lets use Obx widget and obs of GetX for switch the screen while press navigationBar item
+
+// Custom Shape Clip path
+1. Lets make global shape path for our app.It can be use in homePage, profile etc.
+
+
+// Custom AppBar
+1. Lets make a global custom appbar for reuse.And lets use it now on our home screen for show title and name + lets show cart icon in appBar of our homeScreen.
